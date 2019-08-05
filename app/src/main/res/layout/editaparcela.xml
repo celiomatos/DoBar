@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/styleText"
+            android:layout_gravity="center"
+            android:background="@color/darkgray"
+            android:text="@string/editaparcela"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/devedor" />
+
+        <Spinner
+            android:id="@+id/editaparcela_spndevedor"
+            style="@style/styleEdit"
+            android:prompt="@string/devedor" />
+
+        <TableLayout
+            style="@style/styleText"
+            android:stretchColumns="*" >
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/vencimento" />
+
+                <Button
+                    android:id="@+id/editaparcela_btvencimento"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/pagamento" />
+
+                <Button
+                    android:id="@+id/editaparcela_btpagamento"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView                    
+                    style="@style/styleText"
+                    android:text="@string/valorparcela" />
+
+                <EditText
+                    android:id="@+id/editaparcela_edtvalor"
+                    style="@style/styleEdit"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/pago" />
+
+        <RadioGroup
+            android:id="@+id/editaparcela_rgrpago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/editaparcela_rdosim"
+                style="@style/styleText"
+                android:checked="true"
+                android:text="@string/sim" />
+
+            <RadioButton
+                android:id="@+id/editaparcela_rdonao"
+                style="@style/styleText"
+                android:text="@string/nao" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/editaparcela_btsalvar"
+            style="@style/styleTitulo"
+            android:drawableRight="@drawable/salvar"
+            android:onClick="executarAcao"
+            android:text="@string/salvar"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</ScrollView>

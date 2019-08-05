@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/config_server_categ" >
+        <EditTextPreference
+            android:defaultValue="127.0.0.1"
+            android:dialogTitle="@string/config_server_titulo"
+            android:key="ipserver"
+            android:summary="@string/config_server_sumario"
+            android:title="@string/config_server_titulo" />
+        <EditTextPreference
+            android:defaultValue="9090"
+            android:dialogTitle="@string/config_porta_titulo"
+            android:key="portserver"
+            android:summary="@string/config_porta_sumario"
+            android:title="@string/config_porta_titulo" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/config_ordem_categ" >
+        <EditTextPreference
+            android:defaultValue="000000001"
+            android:dialogTitle="@string/ordem"
+            android:key="keyordem"
+            android:summary="@string/config_ordem_sumario"
+            android:title="@string/ordem" />
+
+        <CheckBoxPreference
+            android:key="keydevedor"
+            android:summary="@string/config_permite_cadastro"
+            android:title="@string/devedor" />
+        <CheckBoxPreference
+            android:key="keycredor"
+            android:summary="@string/config_permite_cadastro"
+            android:title="@string/credor" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

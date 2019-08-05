@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/dobar" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        style="@style/styleText"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/menup_consulta"
+                style="@style/styleText"
+                android:background="@drawable/fundobotao"
+                android:drawableTop="@drawable/consulta"
+                android:onClick="executarAcao"
+                android:text="@string/consulta" />
+
+            <Button
+                android:id="@+id/menup_debito"
+                style="@style/styleText"
+                android:background="@drawable/fundobotao"
+                android:drawableTop="@drawable/debito"
+                android:onClick="executarAcao"
+                android:text="@string/debito" />
+
+            <Button
+                android:id="@+id/menup_tipo"
+                style="@style/styleText"
+                android:background="@drawable/fundobotao"
+                android:drawableTop="@drawable/tipo"
+                android:onClick="executarAcao"
+                android:text="@string/tipo" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/menup_cartao"
+                style="@style/styleText"
+                android:background="@drawable/fundobotao"
+                android:drawableTop="@drawable/cartao"
+                android:onClick="executarAcao"
+                android:text="@string/cartao" />
+
+            <Button
+                android:id="@+id/menup_credor"
+                style="@style/styleText"
+                android:background="@drawable/fundobotao"
+                android:drawableTop="@drawable/credor"
+                android:onClick="executarAcao"
+                android:text="@string/credor" />
+
+            <Button
+                android:id="@+id/menup_devedor"
+                style="@style/styleText"
+                android:background="@drawable/fundobotao"
+                android:drawableTop="@drawable/devedor"
+                android:onClick="executarAcao"
+                android:text="@string/devedor" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/menup_limite"
+                style="@style/styleText"
+                android:background="@drawable/fundobotao"
+                android:drawableTop="@drawable/limite"
+                android:onClick="executarAcao"
+                android:text="@string/limite" />
+
+            <Button
+                android:id="@+id/menup_configurar"
+                style="@style/styleText"
+                android:background="@drawable/fundobotao"
+                android:drawableTop="@drawable/config"
+                android:onClick="executarAcao"
+                android:text="@string/configuracao" />
+
+            <Button
+                android:id="@+id/menup_sincro"
+                style="@style/styleText"
+                android:background="@drawable/fundobotao"
+                android:drawableTop="@drawable/sincro"
+                android:onClick="executarAcao"
+                android:text="@string/sincro" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desenvolvedor" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:stretchColumns="0,1" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/child_txtcolum01"
+            style="@style/styleEditYelow" />
+
+        <TextView
+            android:id="@+id/child_txtcolum02"
+            style="@style/styleEditYelow" />
+
+        <TextView
+            android:id="@+id/child_txtcolum03"
+            style="@style/styleEditYelow" />
+    </TableRow>
+
+</TableLayout>

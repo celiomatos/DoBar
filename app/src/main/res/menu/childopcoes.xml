@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_childopcoes_editar_debito"
+        android:title="@string/editadebito"/>
+    <item
+        android:id="@+id/menu_childopcoes_editar_parcela"
+        android:title="@string/editaparcela"/>
+    <item
+        android:id="@+id/menu_childopcoes_detalhes"
+        android:title="@string/detalhe"/>
+
+</menu>

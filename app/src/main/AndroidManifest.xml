@@ -2,20 +2,28 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.dobar">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application android:icon="@drawable/dobar" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name=".activities.CadastroCartao" android:label="@string/cadcartao"> </activity>
+        <activity android:name=".activities.CadastroCredor" android:label="@string/cadcredor"> </activity>
+        <activity android:name=".activities.CadastroDevedor" android:label="@string/caddevedor"> </activity>
+        <activity android:name=".activities.MenuPrincipal" android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".activities.CadastroTipo" android:label="@string/cadtipo"> </activity>
+        <activity android:name=".activities.CadastroLimite" android:label="@string/cadlimitepessoal"> </activity>
+        <activity android:name=".activities.LancarDebito" android:label="@string/debito"> </activity>
+        <activity android:name=".activities.Configuracoes" android:label="@string/configuracao"> </activity>
+        <activity android:name=".activities.ParametrosConsulta" android:label="@string/parametrosconsulta"> </activity>
+        <activity android:name=".activities.Demonstrativo" android:label="@string/demosntrativo"> </activity>
+        <activity android:name=".activities.EditaParcela" android:label="@string/editaparcela"> </activity>
+        <activity android:name=".activities.Sincronizar" android:label="@string/sincro"> </activity>
+        <activity android:name=".activities.FileChooser"> </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/botoesdebito" />
+
+        <TextView
+            style="@style/styleText"
+            android:layout_gravity="center"
+            android:background="@color/darkgray"
+            android:text="@string/lancardebito"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/credor" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autocredor"
+            style="@style/styleEdit"
+            android:completionThreshold="1" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/formpag" />
+
+        <RadioGroup
+            android:id="@+id/lancadebito_rgrformpag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/lancadebito_rdocartao"
+                style="@style/styleText"
+                android:checked="true"
+                android:onClick="executarAcao"
+                android:text="@string/cartao" />
+
+            <RadioButton
+                android:id="@+id/lancadebito_rdocarne"
+                style="@style/styleText"
+                android:onClick="executarAcao"
+                android:text="@string/carne" />
+
+            <RadioButton
+                android:id="@+id/lancadebito_rdooutro"
+                style="@style/styleText"
+                android:onClick="executarAcao"
+                android:text="@string/outro" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/escolhacartao" />
+
+        <Spinner
+            android:id="@+id/spncartao"
+            style="@style/styleText"
+            android:prompt="@string/escolhacartao" />
+
+        <TableLayout
+            style="@style/styleText"
+            android:stretchColumns="*" >
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/lancadebito_txtdatadebito"
+                    style="@style/styleText"
+                    android:text="@string/datadebito" />
+
+                <Button
+                    android:id="@+id/lancadebito_btdatadebito"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao"
+                    android:text="@string/selecione" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/lancadebito_txtvalordebito"
+                    style="@style/styleText"
+                    android:text="@string/valordebito" />
+
+                <EditText
+                    android:id="@+id/lancadebito_edtvlrdebito"
+                    style="@style/styleEdit"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/nrparcelas" />
+
+                <EditText
+                    android:id="@+id/lancadebito_edtnrparcela"
+                    style="@style/styleEdit"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/prevpag" />
+
+                <Button
+                    android:id="@+id/lancadebito_btdatapagamento"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao"
+                    android:text="@string/selecione" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/ordem" />
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/alteraordem" />
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/edtordem"
+                    style="@style/styleEdit"
+                    android:enabled="false"
+                    android:inputType="number" />
+
+                <CheckBox
+                    android:id="@+id/lancadebito_ckbalteraordem"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/devedor" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autodevedor"
+            style="@style/styleEdit"
+            android:completionThreshold="1" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/tipogasto" />
+
+        <Spinner
+            android:id="@+id/spntipo"
+            style="@style/styleText"
+            android:prompt="@string/tipogasto" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/descdebito" />
+
+        <EditText
+            android:id="@+id/lancadebito_edtdesc"
+            style="@style/styleEdit"
+            android:ems="20"
+            android:inputType="textMultiLine" >
+        </EditText>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/lytbotoesacoes"
+            layout="@layout/botoesdeacao" />
+
+        <TextView
+            style="@style/styleText"
+            android:layout_gravity="center"
+            android:background="@color/darkgray"
+            android:text="@string/cadcartao"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/operadora" />
+
+        <EditText
+            android:id="@+id/edtoperadora"
+            style="@style/styleEdit"
+            android:enabled="false"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/bandeira" />
+
+        <Spinner
+            android:id="@+id/spnbandeira"
+            style="@style/styleText"
+            android:prompt="@string/bandeira" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/telefone" />
+
+        <EditText
+            android:id="@+id/edtcartaotel"
+            style="@style/styleEdit"
+            android:enabled="false"
+            android:inputType="phone" />
+
+        <TableLayout
+            style="@style/styleText"
+            android:stretchColumns="*" >
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/diafechamento" />
+
+                <EditText
+                    android:id="@+id/edtfechamento"
+                    style="@style/styleEdit"
+                    android:enabled="false"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/diavencimento" />
+
+                <EditText
+                    android:id="@+id/edtvencimento"
+                    style="@style/styleEdit"
+                    android:enabled="false"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/limitecompra" />
+
+                <EditText
+                    android:id="@+id/edtlimite"
+                    style="@style/styleEdit"
+                    android:enabled="false"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/saldocartao" />
+
+                <EditText
+                    android:id="@+id/edtsaldo"
+                    style="@style/styleEdit"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/emuso" />
+
+                <Spinner
+                    android:id="@+id/spnemuso"
+                    style="@style/styleText"
+                    android:enabled="false" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundobotoes"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/btsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="selecionarAcao"
+        android:src="@drawable/seach" />
+
+    <ImageButton
+        android:id="@+id/btnovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="selecionarAcao"
+        android:src="@drawable/novo" />
+
+    <ImageButton
+        android:id="@+id/btsalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="selecionarAcao"
+        android:src="@drawable/gravar_d" />
+
+    <ImageButton
+        android:id="@+id/bteditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="selecionarAcao"
+        android:src="@drawable/editar_d" />
+
+    <ImageButton
+        android:id="@+id/btexcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="selecionarAcao"
+        android:src="@drawable/apagar_d" />
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/styleText"
+            android:layout_gravity="center"
+            android:background="@color/darkgray"
+            android:text="@string/parametrosconsulta"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TableLayout
+            style="@style/styleText"
+            android:stretchColumns="*" >
+
+            <TextView
+                style="@style/styleTitulo"
+                android:text="@string/vencimento" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/de" />
+
+                <Button
+                    android:id="@+id/param_consulta_btvenc_inicial"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao"
+                    android:text="@string/selecione" />
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/ate" />
+
+                <Button
+                    android:id="@+id/param_consulta_btvenc_final"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao"
+                    android:text="@string/selecione" />
+            </TableRow>
+
+            <TextView
+                style="@style/styleTitulo"
+                android:text="@string/pagamento" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/de" />
+
+                <Button
+                    android:id="@+id/param_consulta_btpag_inicial"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao"
+                    android:text="@string/selecione" />
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/ate" />
+
+                <Button
+                    android:id="@+id/param_consulta_btpag_final"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao"
+                    android:text="@string/selecione" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="@style/styleTitulo"
+            android:text="@string/situacao" />
+
+        <RadioGroup
+            android:id="@+id/param_consulta_rgrsituacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/param_consulta_rdotodos"
+                style="@style/styleText"
+                android:text="@string/todos" />
+
+            <RadioButton
+                android:id="@+id/param_consulta_rdoaberto"
+                style="@style/styleText"
+                android:checked="true"
+                android:text="@string/aberto" />
+
+            <RadioButton
+                android:id="@+id/param_consulta_rdofechado"
+                style="@style/styleText"
+                android:text="@string/fechado" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/styleTitulo"
+            android:text="@string/credor" />
+
+        <Spinner
+            android:id="@+id/param_consulta_spncredor"
+            style="@style/styleText"
+            android:prompt="@string/credor" />
+
+        <TextView
+            style="@style/styleTitulo"
+            android:text="@string/devedor" />
+
+        <Spinner
+            android:id="@+id/param_consulta_spndevedor"
+            style="@style/styleText"
+            android:prompt="@string/devedor" />
+
+        <TextView
+            style="@style/styleTitulo"
+            android:text="@string/emitir" />
+
+        <Spinner
+            android:id="@+id/param_consulta_spnemitir"
+            style="@style/styleText"
+            android:prompt="@string/emitir" />
+
+        <Button
+            android:id="@+id/param_consulta_btvisualizar"
+            style="@style/styleTitulo"
+            android:drawableRight="@drawable/impressora"
+            android:onClick="executarAcao"
+            android:text="@string/visualizar"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</ScrollView>

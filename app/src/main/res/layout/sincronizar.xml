@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/styleText"
+            android:layout_gravity="center"
+            android:background="@color/darkgray"
+            android:text="@string/sincro"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioGroup
+            android:id="@+id/sincronizar_rgrler_or_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sincronizar_rdoLer"
+                style="@style/styleText"
+                android:onClick="executarAcao"
+                android:text="@string/ler" />
+
+            <RadioButton
+                android:id="@+id/sincronizar_rdoEnviar"
+                style="@style/styleText"
+                android:checked="true"
+                android:onClick="executarAcao"
+                android:text="@string/enviar" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/sincronizar_ckbpelarede"
+            style="@style/styleEdit"
+            android:onClick="executarAcao"
+            android:text="@string/enviarpelarede" />
+
+        <TextView
+            style="@style/styleTitulo"
+            android:text="@string/situacao" />
+
+        <RadioGroup
+            android:id="@+id/sincronizar_rgrsituacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sincronizar_rdotodos"
+                style="@style/styleText"
+                android:checked="true"
+                android:text="@string/todos" />
+
+            <RadioButton
+                android:id="@+id/sincronizar_rdoaberto"
+                style="@style/styleText"
+                android:text="@string/aberto" />
+
+            <RadioButton
+                android:id="@+id/sincronizar_rdofechado"
+                style="@style/styleText"
+                android:text="@string/fechado" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/styleTitulo"
+            android:text="@string/devedor" />
+
+        <Spinner
+            android:id="@+id/sincronizar_spndevedor"
+            style="@style/styleText"
+            android:prompt="@string/devedor" />
+
+        <TableLayout
+            style="@style/styleText"
+            android:stretchColumns="*" >
+
+            <TextView
+                style="@style/styleTitulo"
+                android:text="@string/vencimento" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/de" />
+
+                <Button
+                    android:id="@+id/sincronizar_btvenc_inicial"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao"
+                    android:text="@string/selecione" />
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/ate" />
+
+                <Button
+                    android:id="@+id/sincronizar_btvenc_final"
+                    style="@style/styleEdit"
+                    android:onClick="executarAcao"
+                    android:text="@string/selecione" />
+            </TableRow>
+
+            <EditText
+                android:id="@+id/sincronizar_edtfile"
+                style="@style/styleEdit"
+                android:hint="@string/arquivo"
+                android:inputType="text"
+                android:onClick="executarAcao" 
+                android:enabled="false"/>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/sincronizar_btsincronizar"
+            style="@style/styleTitulo"
+            android:drawableRight="@drawable/reload"
+            android:onClick="executarAcao"
+            android:text="@string/sincro"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/lytbotoesacoes"
+            layout="@layout/botoesdeacao" />
+
+        <TextView
+            style="@style/styleText"
+            android:layout_gravity="center"
+            android:background="@color/darkgray"
+            android:text="@string/cadcredor"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/razao" />
+
+        <EditText
+            android:id="@+id/edtrazao"
+            style="@style/styleEdit"
+            android:enabled="false"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/telefone" />
+
+        <EditText
+            android:id="@+id/edttelcredor"
+            style="@style/styleEdit"
+            android:enabled="false"
+            android:inputType="phone" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/edtcredoremail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/blue" />
+
+        <include layout="@layout/groupativo" />
+    </LinearLayout>
+
+</ScrollView>

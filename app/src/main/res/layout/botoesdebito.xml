@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundobotoes"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/debito_btnovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="executarAcao"
+        android:src="@drawable/novo" />
+
+    <ImageButton
+        android:id="@+id/debito_btsalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="executarAcao"
+        android:src="@drawable/gravar" />
+
+    <ImageButton
+        android:id="@+id/debito_bteditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="executarAcao"
+        android:src="@drawable/editar_d" />
+
+    <ImageButton
+        android:id="@+id/debito_btexcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="executarAcao"
+        android:src="@drawable/apagar_d" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/debito_btcalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="executarAcao"
+        android:src="@drawable/calc" />
+
+    <ImageButton
+        android:id="@+id/debito_btcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:onClick="executarAcao"
+        android:src="@drawable/fone" />
+
+</LinearLayout>

@@ -1,3 +1,121 @@
 <resources>
-    <string name="app_name">Do Bar</string>
+    <string name="app_name">doBar</string>
+    <string name="operadora">Operadora</string>
+    <string name="bandeira">Bandeira</string>
+    <string name="diavencimento">Dia do Vencimento</string>
+    <string name="diafechamento">Dia do Fechamento</string>
+    <string name="limitecompra">Limite de Compra</string>
+    <string name="saldocartao">Saldo do Cartao</string>
+    <string name="emuso">Cartao em Uso?</string>
+    <string name="custom">Custom</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Nao</string>
+    <string name="confirmacaoexcluir">Deseja realmente excluir?</string>
+    <string name="confirmacaosalvar">Deseja realmente salvar?</string>
+    <string name="razao">Razao</string>
+    <string name="telefone">Telefone</string>
+    <string name="ativo">Ativado?</string>
+    <string name="cadcredor">Cadastro de Credores</string>
+    <string name="caddevedor">Cadastro de Devedores</string>
+    <string name="cadcartao">Cadastro de Cartoes</string>
+    <string name="cadtipo">Cadastro de Tipos</string>
+    <string name="cadlimitepessoal">Cadastro de Limite Pessoal</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="menu">Menu</string>
+    <string name="cartao">Cartao</string>
+    <string name="credor">Credor</string>
+    <string name="devedor">Devedor</string>
+    <string name="consulta">Consulta</string>
+    <string name="debito">Debito</string>
+    <string name="tipo">Tipo</string>
+    <string name="limite">Limite</string>
+    <string name="configuracao">Configuracao</string>
+    <string name="sincro">Sincronizar</string>
+    <string name="desenvolvedor">by Celio Matos</string>
+    <string name="tipogasto">Tipo de gasto</string>
+    <string name="dia">Dia do mes</string>
+    <string name="limitepessoal">Limite Pessoal</string>
+    <string name="formpag">Forma de Pagamento</string>
+    <string name="descdebito">Descricao do Debito</string>
+    <string name="lancardebito">Lancar Debito</string>
+    <string name="carne">Carne</string>
+    <string name="outro">Outros</string>
+    <string name="datadebito">Data do Debito</string>
+    <string name="escolhacartao">Escolha o Cartao</string>
+    <string name="valordebito">Valor do Debito</string>
+    <string name="nrparcelas">Total de Parcelas</string>
+    <string name="prevpag">Previsao de Pagamento</string>
+    <string name="selecione">Selecione</string>
+    <string name="ordem">Ordem de Compra</string>
+    <string name="config_server_sumario">Informe o IP do Servidor</string>
+    <string name="config_server_titulo">IP do Servidor</string>
+    <string name="config_server_categ">Configurar Servidor</string>
+    <string name="config_porta_titulo">Porta do Servidor</string>
+    <string name="config_permite_cadastro">
+Permitir cadastro automatico no lancamento de debito
+</string>
+    <string name="config_porta_sumario">Informe a Porta do Servidor</string>
+    <string name="config_ordem_sumario">Informe a ultima ordem registrada</string>
+    <string name="config_ordem_categ">Configurar Ordem</string>
+    <string name="alteraordem">Altera Ordem</string>
+    <string name="confirmacao">Deseja salvar este debito</string>
+    <string name="parametrosconsulta">Parametros de Consulta</string>
+    <string name="vencimento">Vencimento</string>
+    <string name="de">de</string>
+    <string name="ate">ate</string>
+    <string name="pagamento">Pagamento</string>
+    <string name="todos">todos</string>
+    <string name="aberto">aberto</string>
+    <string name="fechado">fechado</string>
+    <string name="emitir">Emitir por</string>
+    <string name="visualizar">Visualizar</string>
+    <string name="total">Total</string>
+    <string name="demosntrativo">Demonstrativo</string>
+    <string name="periodo">Periodo</string>
+    <string name="editadebito">Editar Debito</string>
+    <string name="editaparcela">Editar Parcela</string>
+    <string name="detalhe">Detalhe</string>
+    <string name="pagadebito">Pagar Debito</string>
+    <string name="estornadebito">Estornar Debito</string>
+    <string name="enviamsg">Envia Mensagem</string>
+    <string name="confirmpagamento">Deseja pagar a fatura deste grupo</string>
+    <string name="confirmestorno">Deseja estornar a fatura deste grupo</string>
+    <string name="telefonar">Telefonar</string>
+    <string name="deletedebito">Deseja deletar este Debito</string>
+    <string name="valorparcela">Valor Parcela</string>
+    <string name="pago">Pago</string>
+    <string name="salvar">Salvar</string>
+    <string name="confirmeditaparcela">Deseja editar parcela</string>
+    <string name="situacao">Situacao</string>
+    <string name="ler">Atualizar Dados</string>
+    <string name="enviar">Enviar Dados</string>
+    <string name="enviarpelarede">Sincronizar pela Rede</string>
+    <string name="arquivo">Arquivo</string>
+    <string name="folder">Folder</string>
+    <string name="parentDirectory">Parent Directory</string>
+    <string name="fileSize">File Size</string>
+    <string name="currentDir">Current Dir</string>
+    <string-array name="bandeiras">
+        <item>American Express</item>
+        <item>Aura</item>
+        <item>Amex</item>
+        <item>Cartao BNDES</item>
+        <item>Diners Club</item>
+        <item>Elo</item>
+        <item>Hipercard</item>
+        <item>MasterCard</item>
+        <item>RedeShop</item>
+        <item>Sorocred</item>
+        <item>Visa</item>
+        <item>VisaNet</item>
+    </string-array>
+    <string-array name="simnao">
+        <item>NAO</item>
+        <item>SIM</item>
+    </string-array>
+    <string-array name="emitirpor">
+        <item>CREDORES</item>
+        <item>DEVEDORES</item>
+    </string-array>
 </resources>

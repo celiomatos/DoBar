@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        style="@style/styleText"
+        android:text="@string/ativo" />
+
+    <RadioGroup
+        android:id="@+id/rgrativo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdosim"
+            style="@style/styleText"
+            android:checked="true"
+            android:text="@string/sim" />
+
+        <RadioButton
+            android:id="@+id/rdonao"
+            style="@style/styleText"
+            android:text="@string/nao" />
+    </RadioGroup>
+
+</LinearLayout>

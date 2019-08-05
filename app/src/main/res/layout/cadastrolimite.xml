@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/lytbotoesacoes"
+            layout="@layout/botoesdeacao" />
+
+        <TextView
+            style="@style/styleText"
+            android:layout_gravity="center"
+            android:background="@color/darkgray"
+            android:text="@string/cadlimitepessoal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            style="@style/styleText"
+            android:text="@string/devedor" />
+
+        <Spinner
+            android:id="@+id/spndevedor"
+            style="@style/styleEdit"
+            android:prompt="@string/devedor" />
+
+        <TableLayout
+            style="@style/styleText"
+            android:stretchColumns="*" >
+
+            <TableRow>
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/dia" />
+
+                <TextView
+                    style="@style/styleText"
+                    android:text="@string/limitepessoal" />
+            </TableRow>
+
+            <TableRow>
+
+                <Spinner
+                    android:id="@+id/spndia"
+                    style="@style/styleEdit"
+                    android:prompt="@string/dia" />
+
+                <EditText
+                    android:id="@+id/edtvalor"
+                    style="@style/styleEdit"
+                    android:enabled="false"
+                    android:inputType="number" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

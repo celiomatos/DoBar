@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menusend_tel"
+        android:icon="@drawable/fone"/>
+    <item
+        android:id="@+id/menusend_email"
+        android:icon="@drawable/email"/>
+</menu>

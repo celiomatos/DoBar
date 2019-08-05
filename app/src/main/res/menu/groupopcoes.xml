@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_groupopcoes_pagar"
+        android:title="@string/pagadebito"/>
+    <item
+        android:id="@+id/menu_groupopcoes_estornar"
+        android:title="@string/estornadebito"/>
+    <item
+        android:id="@+id/menu_groupopcoes_enviar"
+        android:title="@string/enviamsg"/>
+        <item
+        android:id="@+id/menu_groupopcoes_telefonar"
+        android:title="@string/telefonar"/>
+
+</menu>
